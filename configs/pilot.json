@@ -1,0 +1,52 @@
+{
+  "protocol": "Biomedical augmentation method and prototype",
+  "official_test_count": 500,
+  "development_count": 100,
+  "training_count": 400,
+  "pilot_seed_count": 100,
+  "seed": 42,
+  "routes": [
+    "cr",
+    "bio"
+  ],
+  "teacher_model": null,
+  "teacher_revision": null,
+  "student_model": null,
+  "student_revision": null,
+  "max_generation_calls_before_retries": 600,
+  "status": "Current-chat demonstration and local checks completed; student training is optional reader work.",
+  "release_scope": "augmentation, screening and instruction data export; student training is optional reader work",
+  "first_demo_sources_per_route": 10,
+  "teacher_backend": "current-chat demonstration; openai and hf remain optional for reader-generated extensions",
+  "optional_conditions": [
+    "base",
+    "seed_only",
+    "seed_plus_cr",
+    "seed_plus_bio"
+  ],
+  "optional_training": {
+    "optimizer_steps": 100,
+    "microbatch_size": 1,
+    "gradient_accumulation_steps": 8,
+    "learning_rate": 0.0002,
+    "max_length": 4096,
+    "lora_rank": 16
+  },
+  "optional_api_call_cap_per_route": 30,
+  "demonstration": {
+    "mode": "current_chat_assistant_authored",
+    "sources": 10,
+    "candidates": 20,
+    "routes": {
+      "cr": 10,
+      "bio": 10
+    },
+    "source_labels": {
+      "yes": 4,
+      "no": 4,
+      "maybe": 2
+    },
+    "independent_expert_review": false,
+    "student_training_performed": false
+  }
+}
