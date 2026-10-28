@@ -1,0 +1,45 @@
+{
+  "purpose": "Intentionally constructed teaching controls, not genuine failed generations or evaluation statistics. The third illustrates the limit of structural checks.",
+  "controls": [
+    {
+      "control": "underspecified_question",
+      "constructed_intentionally": true,
+      "not_an_observed_model_failure": true,
+      "source_id": "12684740",
+      "question": "What is the relationship between the subject of the question and the outcome stated in the answer?",
+      "answer": "Naltrexone.",
+      "evidence_quote": "After a 10-day break in training, 5 min of alcohol-associated cues still increased alcohol consumption (29% increase) and the cue effect could be dose-dependently blocked by naltrexone",
+      "automatic_errors": [
+        "underspecified_question"
+      ],
+      "same_assistant_review": "reject",
+      "rejection_reason": "The question fails to identify the biomedical entities and context."
+    },
+    {
+      "control": "invented_quote",
+      "constructed_intentionally": true,
+      "not_an_observed_model_failure": true,
+      "source_id": "12684740",
+      "question": "How did five-minute and ten- or fifteen-minute alcohol-associated cue exposures differ in their effects on alcohol consumption in the rat experiment?",
+      "answer": "Five-minute cues increased consumption, with blood alcohol levels of 8.9 mM versus 7.5 mM in controls and a 26% increase in active-lever responding. Ten- or fifteen-minute cues did not change alcohol consumption.",
+      "evidence_quote": "This deliberately invented sentence is absent from the source abstract.",
+      "automatic_errors": [
+        "evidence_quote_not_found"
+      ],
+      "same_assistant_review": "reject",
+      "rejection_reason": "The quoted evidence is absent from the source."
+    },
+    {
+      "control": "unsupported_causal_generalization",
+      "constructed_intentionally": true,
+      "not_an_observed_model_failure": true,
+      "source_id": "21618245",
+      "question": "Do the SEER EPSCC findings prove that surgery or radiation causally improves survival for every patient?",
+      "answer": "Yes. These findings prove a causal survival benefit for every EPSCC patient.",
+      "evidence_quote": "For all EPSCCs multivariate analysis revealed age (>50), gender (female), stage (regional, distant), radiation, and surgery to be independent predictors of survival.",
+      "automatic_errors": [],
+      "same_assistant_review": "reject",
+      "rejection_reason": "The source reports database associations and predictors, not randomized causal proof or a universal benefit."
+    }
+  ]
+}

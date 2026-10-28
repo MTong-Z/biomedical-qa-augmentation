@@ -1,0 +1,25 @@
+{
+  "mode": "current_chat_assistant_authored",
+  "sources": 10,
+  "candidates": 20,
+  "by_route": {
+    "cr": 10,
+    "bio": 10
+  },
+  "source_labels": {
+    "yes": 4,
+    "no": 4,
+    "maybe": 2
+  },
+  "structural_pass_count": 20,
+  "same_assistant_accepted_count": 20,
+  "error_counts": {},
+  "independent_expert_review": false,
+  "model_network_calls": 0,
+  "per_stage_token_counts": null,
+  "not_a_generation_acceptance_benchmark": true,
+  "student_training_performed": false,
+  "source_file_sha256": "35f062f03eb40e71148b66d290a9d0a307f327c32c81ea09794a63dd470dea3d",
+  "drafts_file_sha256": "d8eed3b8e4ca317af26cdd05a3d6e4d323b11020a09584ca5c3a48dc2373bd43",
+  "note": "Curated current-chat examples, jointly composed stages and same-assistant source review. Ten source groups, not twenty independent studies. No downstream performance claim."
+}
